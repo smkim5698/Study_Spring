@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- < Bean 생성 및 설정(component-scan) > 
+		1. Namespaces에서 ‘context’ 추가하기. 
+		2. Annotation 방식으로 Bean을 등록. 
+		3. 의존성 설정을 위해서 대상 패키지를 지정. -->
+		
+	<!-- component-scan을 통한 bean 등록 -->
+	<context:component-scan
+		base-package="SpringDependencyInjection"></context:component-scan>
+
+</beans>
